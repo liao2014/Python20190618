@@ -20,8 +20,8 @@ for i in range(50):
     t.start()  # 启动线程
     t_objs.append(t)
 print(t_objs)  # t_objs这个存放所有的t线程
-for i in t_objs:
-    t.join()  # 等待每个进程运行完
+for j in t_objs:
+    j.join()  # 等待每个进程运行完
 
 print("所有进程执行完了", threading.current_thread())
 print("num:", num)
